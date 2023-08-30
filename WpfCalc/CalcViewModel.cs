@@ -24,8 +24,8 @@ namespace WpfCalc
         // 数字ボタンが押されたときの処理
         public void NumCommand(object content)
         {
-            // ボタン名を数値に変換 変更あり！！！！！！！
-            int n = int.Parse((string)content);
+            // ボタン名を数値に変換
+            var n = int.Parse((string)content);
 
             // 電卓クラスの数字ボタン処理を呼び出す
             Calc.NumKey(n);
